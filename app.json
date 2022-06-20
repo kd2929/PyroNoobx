@@ -11,7 +11,7 @@
     "env": {
         "ENV": {
             "description": "Anything",
-            "required": "True"
+            "required": "False"
         }
     },
     "stack": "container",
