@@ -12,7 +12,6 @@ import pyrogram
 from pyrogram import Client, filters
 import tgcrypto
 from p_bar import progress_bar
-# from details import api_id, api_hash, bot_token
 from subprocess import getstatusoutput
 import helper
 import logging
@@ -21,19 +20,9 @@ import aiohttp
 import asyncio
 import aiofiles
 from pyrogram.types import User, Message
-# import progressor 
-# from progressor import progress_for_pyrogram
 import sys
 import re
 import os
-# import pycurl
-
-
-# bot = Client(
-#     "bot",
-#     api_id=api_id,
-#     api_hash=api_hash,
-#     bot_token=bot_token)
 
 bot = Client(
     "bot",
@@ -44,7 +33,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"])& ~filters.edited)
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\nBot made by BATMAN")
+    editable = await m.reply_text("Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\nBot made by NOOB CREATOR BOY")
 
 @bot.on_message(filters.command(["cancel"]))
 async def cancel(_, m):
