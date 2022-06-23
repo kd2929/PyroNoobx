@@ -1,4 +1,3 @@
-from pyrogram.errors.exceptions.bad_request_400 import StickerEmojiInvalid
 import requests
 import json
 import subprocess
@@ -26,9 +25,9 @@ import os
 
 bot = Client(
     "bot",
-    bot_token=os.environ.get("BOT_TOKEN"),
-    api_id=int(os.environ.get("API_ID")),
-    api_hash=os.environ.get("API_HASH")
+    bot_token=os.environ.get("5165987888:AAGp6wGxNFW4cQ1Hp3gRW1u34GV259px5eY"),
+    api_id=int(os.environ.get("15254258")),
+    api_hash=os.environ.get("107dc8de4b11afca514ad02f3e1a2efb")
 )
 
 @bot.on_message(filters.command(["start"])& ~filters.edited)
