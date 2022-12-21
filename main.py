@@ -23,9 +23,9 @@ import sys
 import re
 import os
 
-"API_ID"="15254258"
-"BOT_TOKEN"="5799527899:AAE6AH9iqpCpzJp8QrhPfTBuwRrYSyNf05g"
-"API_HASH"="107dc8de4b11afca514ad02f3e1a2efb"
+API_ID="15254258"
+BOT_TOKEN="5799527899:AAE6AH9iqpCpzJp8QrhPfTBuwRrYSyNf05g"
+API_HASH="107dc8de4b11afca514ad02f3e1a2efb"
 
 
 bot = Client(
