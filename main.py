@@ -27,13 +27,13 @@ API_ID="10577960"
 BOT_TOKEN="6123256683:AAFiU815NR0aoptAFBfF1SnjExsIFFVFXvw"
 API_HASH="80fd047285f4e94ca80311928b6bb5da"
 
-
-bot = Client(
+bot = Client(
     "bot",
-    bot_token=BOT_TOKEN,
-    api_id=API_ID,
-    api_hash=API_HASH
+    bot_token=os.environ.get("BOT_TOKEN"),
+    api_id=int(os.environ.get("API_ID")),
+    api_hash=os.environ.get("API_HASH")
 )
+
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
