@@ -9,7 +9,7 @@
     "website": "https://github.com/kd2929",
     "success_url": "https://github.com/kd2929/PyroNoob",
     "env": {
-        "ENV": {
+        "ENV": { "Nothing",
             "description": "Anything",
             "required": "False"
         }
